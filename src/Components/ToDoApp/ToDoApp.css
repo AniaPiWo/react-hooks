@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-row label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.form-row input {
+  background-color: inherit;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #d1d1d1;
+  transition: border-color 0.25s;
+}
+
+.form-row input:focus {
+  border-color: #646cff;
+}
+
+.btn {
+  max-width: 200px;
+  align-self: flex-start;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.list-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-color: inherit;
+  border-radius: 3px;
+}
+
+.list-items li label {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

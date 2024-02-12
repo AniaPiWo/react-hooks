@@ -1,0 +1,20 @@
+.usestate {
+  padding: 1rem;
+}
+
+.usememo {
+  display: flex;
+  flex-direction: column;
+}
+
+.usememo input {
+  text-align: center;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
+
+.double {
+  text-align: center;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
