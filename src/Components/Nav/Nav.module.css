@@ -2,3 +2,11 @@
   display: flex;
   gap: 1rem;
 }
+
+.nav a.active {
+  background-color: hotpink;
+}
+
+.nav a:hover {
+  color: hotpink !important;
+}

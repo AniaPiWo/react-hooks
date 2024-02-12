@@ -1,4 +1,4 @@
-import "./ToDoApp.css";
+import styles from "./ToDoApp.module.css";
 import { useState, useEffect } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
@@ -32,10 +32,10 @@ export default function ToDoApp() {
   }
 
   return (
-    <>
+    <div className={styles.container}>
+      <h1 className={styles.header}>Just Another ToDoApp</h1>
       <TodoForm onSubmit={addTodo} />
-      <h1 className="header">Just Another ToDoApp</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-    </>
+    </div>
   );
 }

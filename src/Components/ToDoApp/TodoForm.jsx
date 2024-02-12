@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./ToDoApp.module.css";
 
 // eslint-disable-next-line react/prop-types
 const TodoForm = ({ onSubmit }) => {
@@ -12,8 +13,8 @@ const TodoForm = ({ onSubmit }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="new-item-form">
-      <div className="form-row">
+    <form onSubmit={handleSubmit} className={styles.newItemForm}>
+      <div className={styles.formRow}>
         <label htmlFor="item">New Item</label>
         <input
           value={newItem}
@@ -23,7 +24,7 @@ const TodoForm = ({ onSubmit }) => {
           onChange={(e) => setNewItem(e.target.value)}
         />
       </div>
-      <button className="btn">Add</button>
+      <button className={styles.btn}>Add</button>
     </form>
   );
 };

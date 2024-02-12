@@ -1,15 +1,13 @@
+import CustomLink from "../CustomLink/CustomLink";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <ul className={styles.nav}>
-      <li>
-        <a href="/hooks">Hooks</a>
-      </li>
-      <li>
-        <a href="todo">Todo</a>
-      </li>
-    </ul>
+    <nav className={styles.nav}>
+      <CustomLink to="/hooks">Hooks</CustomLink>
+      <CustomLink to="/components">Components</CustomLink>
+      <CustomLink to="/todo">ToDoApp</CustomLink>
+    </nav>
   );
 };
 
